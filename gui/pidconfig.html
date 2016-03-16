@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="pidconfig.css">
+<script src="pidconfig.js"></script>
+</head>
+<body onload="load()">
+<span style="display:none" id="mode">0</span>
+<table width="100%">
+<tr><td width="10%">Mode  <td width="10%"><span id="modestring">Off</span><td width="80%"> <input id="range_m" class="range" type="range" min="0" max="2" value="0" step="1" onchange="save()" oninput="changemode(this.value)" /></tr>
+<tr id="row_e" ><td width="10%">Effect<td width="10%"><span id="effect">0</span>&nbsp;%<td width="80%"> <input id="range_e" class="range" type="range" min="0" max="100" value="0" step="1" onchange="save()" oninput="effect(this.value)" /></tr>
+<tr id="row_t" ><td width="10%">Temp<td width="10%"><span id="temp">0</span>&nbsp;&#8451;<td width="80%"> <input id="range_t" class="range" type="range" min="0" max="100" value="0" step="1" onchange="save()" oninput="temperature(this.value)" /></tr>
+<tr id="row_p" ><td width="10%">kP  <td width="10%"><span id="kp">0</span><td width="80%"> <input id="range_p" class="range" type="range" min="0" max="100" value="0" step="1" onchange="save()" oninput="changekp(this.value)" /></tr>
+<tr id="row_i" ><td width="10%">kI  <td width="10%"><span id="ki">0</span><td width="80%"> <input id="range_i" class="range" type="range" min="0" max="10" value="0" step="0.1" onchange="save()" oninput="changeki(this.value)" /></tr>
+<tr id="row_d" ><td width="10%">kD  <td width="10%"><span id="kd">0</span><td width="80%"> <input id="range_d" class="range" type="range" min="0" max="10" value="0" step="0.1" onchange="save()" oninput="changekd(this.value)" /></tr>
+</table>
+
+<span id="log">&nbsp;</span>
+
+</body>
+</html>
