@@ -1,8 +1,8 @@
 var lastsave=0;
 var timer;
 
-var CONFIG_CHANNEL="98429";
-var CONFIG_APIKEY="JMXN5OQMY8ES50TY";
+var CONFIG_CHANNEL="12345";
+var CONFIG_APIKEY="ABCDEFGHIJKLMNOP";
 
 function temperature(newValue)
 {
